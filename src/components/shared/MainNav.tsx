@@ -1,7 +1,7 @@
 import React, { CSSProperties } from 'react';
 import { StyledLink } from 'baseui/link';
-import { RiFilePaper2Fill, SiGithub } from 'react-icons/all';
-import { ARTICLE_LINK, GITHUB_LINK } from '../../constants/links';
+import { SiGithub } from 'react-icons/all';
+import { GITHUB_LINK } from '../../constants/links';
 
 function MainNav() {
   const linkStyle: CSSProperties = {
@@ -17,9 +17,6 @@ function MainNav() {
 
   return (
     <nav style={{ display: 'flex', marginBottom: '20px' }}>
-      <StyledLink href={ARTICLE_LINK} style={linkStyle}>
-        <RiFilePaper2Fill style={iconStyle} /> How it works
-      </StyledLink>
       <StyledLink href={GITHUB_LINK} style={linkStyle}>
         <SiGithub style={iconStyle} /> Source-code
       </StyledLink>

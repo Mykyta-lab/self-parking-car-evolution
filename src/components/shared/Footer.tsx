@@ -3,7 +3,7 @@ import { Block } from 'baseui/block';
 import { FaGithub, FaTwitter, RiFilePaper2Fill } from 'react-icons/all';
 import { IconType } from 'react-icons/lib';
 
-import { ARTICLE_LINK, GITHUB_LINK, TWITTER_LINK } from '../../constants/links';
+import { GITHUB_LINK } from '../../constants/links';
 
 function Footer() {
   return (
@@ -15,19 +15,9 @@ function Footer() {
       justifyContent="center"
     >
       <IconLink
-        url={TWITTER_LINK}
-        title="Trekhleb on Twitter"
-        Icon={FaTwitter}
-      />
-      <IconLink
         url={GITHUB_LINK}
         title="Project on GitHub"
         Icon={FaGithub}
-      />
-      <IconLink
-        url={ARTICLE_LINK}
-        title="How the algorithm works"
-        Icon={RiFilePaper2Fill}
       />
     </Block>
   );

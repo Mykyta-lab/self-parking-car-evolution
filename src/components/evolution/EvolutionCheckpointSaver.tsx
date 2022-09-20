@@ -21,7 +21,6 @@ import { Paragraph3 } from 'baseui/typography';
 
 import Row from '../shared/Row';
 import { Generation, Percentage, Probability } from '../../libs/genetic';
-import { CHECKPOINTS_PATH } from '../../constants/links';
 import demoCheckpoint from '../../checkpoints/ckpt--population-1000--generation-36.json';
 
 export type EvolutionCheckpoint = {
@@ -137,7 +136,7 @@ function EvolutionCheckpointSaver(props: EvolutionCheckpointSaverProps) {
           Checkpoint is a <code>json</code> file that contain the history of the evolution and the list of genomes from the latest generation.
         </Paragraph3>
         <Paragraph3>
-          You may save your own evolution progress to the checkpoint file or use <a style={{color: 'black'}} href={CHECKPOINTS_PATH}>one of the pre-trained checkpoints</a>.
+          You may save your own evolution progress to the checkpoint file.
         </Paragraph3>
 
         <Block marginBottom="20px">

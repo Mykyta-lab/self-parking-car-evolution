@@ -39,7 +39,6 @@ import ParkingAutomatic from '../world/parkings/ParkingAutomatic';
 import World from '../world/World';
 import { BAD_SIMULATION_BATCH_INDEX_CHECK, BAD_SIMULATION_MIN_LOSS_INCREASE_PERCENTAGE, BAD_SIMULATION_RETRIES_ENABLED, BAD_SIMULATION_RETRIES_NUM, FITNESS_ALPHA } from './constants/evolution';
 import EvolutionCheckpointSaver, { EvolutionCheckpoint } from './EvolutionCheckpointSaver';
-import { ARTICLE_LINK } from '../../constants/links';
 import { DynamicCarsPosition } from '../world/constants/cars';
 import { DYNAMIC_CARS_POSITION_FRONT } from '../world/constants/cars';
 
@@ -714,7 +713,7 @@ function EvolutionTabEvolution() {
       <Block marginTop="20px">
         <Notification overrides={{Body: {style: {width: 'auto'}}}}>
           Train the car to do self-parking using genetic algorithm<br/><br/>
-          <small>For better results, increase the population size to 500-1000 and wait for 50-100 generations. <a style={{color: 'rgb(30, 84, 183)'}} href={ARTICLE_LINK}>More about params setup</a></small>
+          <small>For better results, increase the population size to 500-1000 and wait for 50-100 generations.</small>
         </Notification>
       </Block>
       <EvolutionAnalytics
